@@ -1,0 +1,29 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.card {
+  max-width: 90%;
+  background-color: var(--clr-white);
+
+  border-radius: var(--br-1);
+  box-shadow: var(--bs-1);
+  padding: var(--sp-6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+
+  margin-block-end: var(--sp-5);
+}
+
+.header-icon {
+  width: 25px;
+}
+
+.header-title {
+  font-size: var(--fs-9);
+  font-weight: var(--fw-bold);
+  line-height: 0;
+}

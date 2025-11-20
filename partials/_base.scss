@@ -1,4 +1,5 @@
 @use "utils" as *;
+@use "variables" as *;
 
 body {
   font-family: var(--ff-main), sans-serif;
@@ -9,14 +10,18 @@ body {
   background-color: var(--clr-tint);
 }
 
-// .page {
-//   max-width: var(--container-width);
-//   min-height: 100vh;
-//   background-color: var(--clr-tint);
-//   background-image: url("./assets/images/background-pattern-mobile.svg");
-//   background-repeat: no-repeat;
+.page {
+  margin-inline: auto;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
 
-//   @media (min-width: 600px) {
-//     background-image: url("./assets/images/background-pattern-desktop.svg");
-//   }
-// }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $bp-tablet) {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+}
