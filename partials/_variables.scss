@@ -44,5 +44,11 @@
   --sp-11: #{toRem(96px)};
   --sp-12: #{toRem(128px)};
 
-  --desktop-container-width: #{toRem(600px)};
+  --container-width: #{toRem(375px)};
+}
+
+@media (min-width: 600px) {
+  :root {
+    --container-width: #{toRem(1440px)};
+  }
 }

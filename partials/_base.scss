@@ -5,4 +5,18 @@ body {
   font-size: var(--fs-4);
   font-weight: var(--fw-normal);
   line-height: 1.5;
+
+  background-color: var(--clr-tint);
 }
+
+// .page {
+//   max-width: var(--container-width);
+//   min-height: 100vh;
+//   background-color: var(--clr-tint);
+//   background-image: url("./assets/images/background-pattern-mobile.svg");
+//   background-repeat: no-repeat;
+
+//   @media (min-width: 600px) {
+//     background-image: url("./assets/images/background-pattern-desktop.svg");
+//   }
+// }
