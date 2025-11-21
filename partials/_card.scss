@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 .card {
-  max-width: 90%;
+  max-width: min(90%, var(--card-max-size));
   background-color: var(--clr-white);
 
   border-radius: var(--br-1);

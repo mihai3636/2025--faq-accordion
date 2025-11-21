@@ -29,24 +29,33 @@ input {
   }
 
   &:checked ~ .question-answer {
-    height: 50px;
+    height: var(--answer-height);
   }
 }
 
 .question-label {
   display: flex;
   justify-content: space-between;
+  gap: var(--sp-1);
   align-items: center;
 
   cursor: pointer;
 }
 
 .question-text {
-  // line-height: 0;
+  line-height: var(--lh-1);
 }
 
 .question-answer {
   height: 0;
   overflow: hidden;
   transition: height 0.2s ease-out;
+}
+
+.answer {
+  color: var(--clr-primary);
+  font-weight: var(--fw-thin);
+  font-size: var(--fs-3);
+
+  padding-block-start: var(--sp-5);
 }

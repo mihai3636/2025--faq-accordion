@@ -1,6 +1,7 @@
 @use "./utils" as *;
 
-$bp-tablet: #{toRem(700px)};
+$bp-tablet: #{toRem(375px)};
+$bp-desktop: #{toRem(600px)};
 
 :root {
   --clr-primary: hsl(292, 16%, 49%);
@@ -46,17 +47,30 @@ $bp-tablet: #{toRem(700px)};
   --sp-11: #{toRem(96px)};
   --sp-12: #{toRem(128px)};
 
-  --container-width: #{toRem(375px)};
-
   // BORDER RADIUS
   --br-1: #{toRem(10px)};
 
   // BOX SHADOW
   --bs-1: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  // LINE HEIGHT
+  --lh-1: 1.2;
+  --lh-2: 1.4;
+
+  // SIZES
+  --container-width: #{toRem(375px)};
+  --answer-height: #{toRem(130px)};
+  --card-max-size: #{toRem(600px)};
 }
 
 @media (min-width: $bp-tablet) {
   :root {
     --container-width: #{toRem(1440px)};
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  :root {
+    --answer-height: #{toRem(80px)};
   }
 }
