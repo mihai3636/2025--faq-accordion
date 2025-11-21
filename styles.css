@@ -149,7 +149,7 @@ body {
 .question-icon {
   width: 30px;
   height: 30px;
-  background-image: url("../assets/images/icon-plus.svg");
+  background-image: url("./assets/images/icon-plus.svg");
   flex-shrink: 0;
 }
 
@@ -161,7 +161,7 @@ input {
   pointer-events: none;
 }
 input:checked + .question-label .question-icon {
-  background-image: url("../assets/images/icon-minus.svg");
+  background-image: url("./assets/images/icon-minus.svg");
 }
 input:checked ~ .question-answer {
   height: var(--answer-height);

@@ -14,7 +14,7 @@
 .question-icon {
   width: 30px;
   height: 30px;
-  background-image: url("../assets/images/icon-plus.svg");
+  background-image: url("./assets/images/icon-plus.svg");
   flex-shrink: 0;
 }
 
@@ -27,7 +27,7 @@ input {
 
   &:checked + .question-label {
     .question-icon {
-      background-image: url("../assets/images/icon-minus.svg");
+      background-image: url("./assets/images/icon-minus.svg");
     }
   }
 
