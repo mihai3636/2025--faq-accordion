@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -19,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/main.js" defer></script>
 
     <title>FAQ accordion</title>
   </head>
@@ -34,14 +34,26 @@
           <h1 class="header-title">FAQs</h1>
         </header>
         <div class="question">
-          <input id="question-1" type="checkbox" name="question-1" />
+          <input
+            id="question-1"
+            type="checkbox"
+            name="question-1"
+            aria-controls="section-1"
+            aria-expanded="false"
+          />
           <label for="question-1" class="question-label">
             <p class="question-text">
               What is Frontend Mentor, and how will it help me?
             </p>
-            <div class="question-icon"></div>
+            <div class="question-icon" aria-hidden="true"></div>
           </label>
-          <div class="question-answer">
+          <div
+            id="section-1"
+            aria-hidden="true"
+            aria-labelledby="question-1"
+            role="region"
+            class="question-answer"
+          >
             <p class="answer">
               Frontend Mentor offers realistic coding challenges to help
               developers improve their frontend coding skills with projects in
@@ -52,12 +64,24 @@
         </div>
 
         <div class="question">
-          <input id="question-2" type="checkbox" name="question-2" />
+          <input
+            id="question-2"
+            type="checkbox"
+            name="question-2"
+            aria-controls="section-2"
+            aria-expanded="false"
+          />
           <label for="question-2" class="question-label">
             <p class="question-text">Is Frontend Mentor free?</p>
-            <div class="question-icon"></div>
+            <div class="question-icon" aria-hidden="true"></div>
           </label>
-          <div class="question-answer">
+          <div
+            id="section-2"
+            aria-hidden="true"
+            aria-labelledby="question-2"
+            role="region"
+            class="question-answer"
+          >
             <p class="answer">
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
@@ -67,14 +91,26 @@
         </div>
 
         <div class="question">
-          <input id="question-3" type="checkbox" name="question-1" />
+          <input
+            id="question-3"
+            type="checkbox"
+            name="question-3"
+            aria-controls="section-3"
+            aria-expanded="false"
+          />
           <label for="question-3" class="question-label">
             <p class="question-text">
               Can I use Frontend Mentor projects in my portfolio?
             </p>
-            <div class="question-icon"></div>
+            <div class="question-icon" aria-hidden="true"></div>
           </label>
-          <div class="question-answer">
+          <div
+            id="section-3"
+            aria-hidden="true"
+            aria-labelledby="question-3"
+            role="region"
+            class="question-answer"
+          >
             <p class="answer">
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
@@ -84,20 +120,32 @@
         </div>
 
         <div class="question">
-          <input id="question-4" type="checkbox" name="question-4" />
+          <input
+            id="question-4"
+            type="checkbox"
+            name="question-4"
+            aria-controls="section-4"
+            aria-expanded="false"
+          />
           <label for="question-4" class="question-label">
             <p class="question-text">
               How can I get help if I'm stuck on a challenge?
             </p>
-            <div class="question-icon"></div>
+            <div class="question-icon" aria-hidden="true"></div>
           </label>
-          <div class="question-answer">
+          <div
+            id="section-4"
+            aria-hidden="true"
+            aria-labelledby="question-4"
+            role="region"
+            class="question-answer"
+          >
             <p class="answer">
-            The best place to get help is inside Frontend Mentor's Discord
-            community. There's a help channel where you can ask questions and
-            seek support from other community members.
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.
             </p>
-          </d>
+          </div>
         </div>
       </article>
     </main>

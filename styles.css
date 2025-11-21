@@ -177,6 +177,9 @@ input:focus-visible ~ .question-label {
   align-items: center;
   cursor: pointer;
 }
+.question-label:hover > .question-text {
+  color: var(--clr-primary);
+}
 
 .question-text {
   line-height: var(--lh-1);

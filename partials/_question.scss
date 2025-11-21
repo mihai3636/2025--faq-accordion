@@ -47,6 +47,10 @@ input {
   align-items: center;
 
   cursor: pointer;
+
+  &:hover > .question-text {
+    color: var(--clr-primary);
+  }
 }
 
 .question-text {
