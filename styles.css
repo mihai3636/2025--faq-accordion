@@ -121,11 +121,21 @@ body {
 .header-icon {
   width: 25px;
 }
+@media (min-width: 37.5rem) {
+  .header-icon {
+    width: 35px;
+  }
+}
 
 .header-title {
   font-size: var(--fs-9);
   font-weight: var(--fw-bold);
   line-height: 0;
+}
+@media (min-width: 37.5rem) {
+  .header-title {
+    font-size: var(--fs-10);
+  }
 }
 
 .question {
@@ -165,6 +175,11 @@ input:checked ~ .question-answer {
 .question-text {
   line-height: var(--lh-1);
 }
+@media (min-width: 37.5rem) {
+  .question-text {
+    font-size: var(--fs-5);
+  }
+}
 
 .question-answer {
   height: 0;
@@ -177,6 +192,11 @@ input:checked ~ .question-answer {
   font-weight: var(--fw-thin);
   font-size: var(--fs-3);
   padding-block-start: var(--sp-5);
+}
+@media (min-width: 37.5rem) {
+  .answer {
+    font-size: var(--fs-4);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
