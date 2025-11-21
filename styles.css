@@ -156,12 +156,18 @@ body {
 input {
   opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 input:checked + .question-label .question-icon {
   background-image: url("../assets/images/icon-minus.svg");
 }
 input:checked ~ .question-answer {
   height: var(--answer-height);
+}
+input:focus-visible ~ .question-label {
+  outline: 1px solid var(--clr-shade);
 }
 
 .question-label {

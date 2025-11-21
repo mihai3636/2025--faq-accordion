@@ -21,6 +21,9 @@
 input {
   opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 
   &:checked + .question-label {
     .question-icon {
@@ -30,6 +33,10 @@ input {
 
   &:checked ~ .question-answer {
     height: var(--answer-height);
+  }
+
+  &:focus-visible ~ .question-label {
+    outline: 1px solid var(--clr-shade);
   }
 }
 
